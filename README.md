@@ -9,7 +9,7 @@
     And: User is redirect to dashboard page
     And: User clicks on 'Username' profile dropdown
     And: User clicks 'Logout' button
-    Then: User is redirected to login page and the message "You have successfully logged out" is displayed
+    Then: User is redirected to login page and displayed message "You have successfully logged out"
 
 ### Scenario: Navigate to login page, attempt to Unsuccessfully login with incorrect credentials
     Given: User is on wave-trail login page
