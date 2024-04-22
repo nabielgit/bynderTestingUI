@@ -1,6 +1,6 @@
 # TEST SCENARIOS
 
-## Feature: Login and logout functionalites
+## Feature: Login and Logout functionalites
 
 ### Scenario: Navigate to login page, successfully login and then logout of dashboard
     Given: User is on wave-trial login page
