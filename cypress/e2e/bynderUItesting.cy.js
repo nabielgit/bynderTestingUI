@@ -50,9 +50,9 @@ describe('Navigate to wave-trial page, attempt to login and logout', () => {
         cy.url().should('include', '/login/')
     
         // Get email/username input, type username into it
-        cy.get('input[id="inputEmail"]').type('qa-assignment2wasd')
+        cy.get('input[id="inputEmail"]').type('qa-assignment2qwerty')
           .wait(1000) // wait one sec
-          .should('have.value', 'qa-assignment2wasd') // Verify that the username has been filled
+          .should('have.value', 'qa-assignment2qwerty') // Verify that the username has been filled
   
         // Get password input, type password into it
         cy.get('input[id="inputPassword"]').type('qa-Bynder50223!')
@@ -96,7 +96,7 @@ describe('Navigate to wave-trial page, attempt to login and logout', () => {
       })
   })
 
-  
+
 // describe('Dashboard Nav-bar, view pages', () => {
 //     it('View Assets', () => {
 //       // http://wave-trial.getbynder.com/
