@@ -6,18 +6,18 @@
     Given: User is on wave-trial login page
     When: User fills in 'Email/Username' and 'Password'
     And: User clicks 'Login' button
-    And: User is redirect to dashboard page
+    And: User is redirected to dashboard page
     And: User clicks on 'Username' profile dropdown
     And: User clicks 'Logout' button
     Then: User is redirected to login page and displayed message "You have successfully logged out"
 
-### Scenario: Navigate to login page, attempt to Unsuccessfully login with incorrect credentials
+### Scenario: Navigate to login page, attempt to unsuccessfully login with incorrect credentials
     Given: User is on wave-trail login page
     When: User fills in 'Email/Username' and 'Password'
     And: User clicks 'Login' button
     Then: User is displayed error message "You have entered an incorrect username or password."
 
-### Scenario: Navigate to login page, cancel attmept to reset password
+### Scenario: Navigate to login page, cancel attempt to reset password
     Given: User is on wave-trial login page
     When: User clicks 'Lost Password?'
     And: User is redirected to forgotPassword page
@@ -30,7 +30,7 @@
 
 ### Execute commands in terminal:
 
-To build image, name it using -t byndertestingui and -f for Dockerfile 
+To build image, name it using -t byndertestingui and -f and . for Dockerfile 
 
 `docker build -t byndertestingui -f Dockerfile .` 
 
