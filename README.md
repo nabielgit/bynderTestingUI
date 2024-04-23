@@ -1,3 +1,28 @@
+# Setup
+- Install Docker Desktop
+- Create a Dockerfile in project directory
+
+### Execute commands in terminal:
+
+To build image, name it using -t byndertestingui and -f for Dockerfile 
+
+`docker build -t byndertestingui -f Dockerfile .` 
+
+To run, -it interactive terminals, --name for container name, byndertestingui is the image name in this case
+
+`docker run -it --name byndertestingui byndertestingui ` 
+
+- Normally, testing on chrome is best practice, However currently a bug with cypress/browses docker images 
+
+`docker run -it --name byndertestingui byndertestingui -b chrome `
+
+### Go to Docker desktop application
+- Select Images 
+- Select byndertestingui 
+- Hit run to create container
+- Go to Containers
+- Select container and hit run
+
 # TEST SCENARIOS
 
 ## Feature: Login and Logout functionalites
@@ -23,5 +48,3 @@
     And: User is redirected to forgotPassword page
     And: User clicks 'Cancel' button
     Then: User is redirected to login page
-
-
