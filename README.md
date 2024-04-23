@@ -38,7 +38,7 @@ To run, -it interactive terminals, --name for container name, byndertestingui is
 
 `docker run -it --name byndertestingui byndertestingui ` 
 
-- Testing on chrome is best practice, However currently a bug with cypress/browsers docker images, this is the command:
+- Testing on chrome is best practice. However, currently there is a bug with cypress/browsers docker images, this would be the command:
 
 `docker run -it --name byndertestingui byndertestingui -b chrome `
 
